@@ -1,0 +1,23 @@
+{
+    "name": "tfone/example-contactbundle",
+    "description": "Example bundle for datagridhelper",
+    "homepage": "https://github.com/24198/ContactBundle.git",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "[24198] J. Casteleijn",
+            "homepage": "https://github.com/24198/"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Tfone\\Bundle\\ContactBundle": "src/"
+        }
+    },
+    "target-dir": "src/Tfone/Bundle/ContactBundle",
+    "require": {
+        "php": ">=5.4.4",
+        "oro/platform": "1.*"
+    },
+    "minimum-stability": "stable"
+}

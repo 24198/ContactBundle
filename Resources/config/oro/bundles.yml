@@ -1,0 +1,2 @@
+bundles:
+    - { name: Tfone\Bundle\ContactBundle\TfoneContactBundle, priority: 100 }

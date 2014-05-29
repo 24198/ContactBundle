@@ -1,0 +1,13 @@
+parameters:        
+    tfone_contact.datagrid_contact_listener.class:              Tfone\Bundle\ContactBundle\EventListener\Datagrid\ContactListener
+  
+        
+services:    
+    # event listener    
+    tfone_contact.datagrid_contact_listener:
+        class: %tfone_contact.datagrid_contact_listener.class%
+        arguments: 
+            - @tfone_datagrid.datagrid_helper
+        tags:
+            - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.before.contacts-grid, method: buildBefore }
+
